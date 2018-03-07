@@ -1,0 +1,25 @@
+﻿@model IEnumerable<HairSalonApp.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Manage Employees</h2>
+        <p>
+            Fusce et nibh in nisi interdum faucibus quis eu mauris. Morbi et dignissim est. In ipsum ligula, congue at ornare in, dignissim vel augue. Etiam eu nibh orci. Donec elementum vitae leo eu dictum.
+        </p>        
+        @Html.ActionLink("Employees", "Emp", "Employees", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg" })
+    </div>
+    <div class="col-md-4">
+        <h2>See All Appointmets</h2>
+        <p>Maecenas pretium ex diam, sed bibendum est aliquet et. Quisque malesuada odio commodo placerat facilisis. Duis justo dolor, tincidunt sit amet dignissim eu, pretium ut lacus.</p>
+       @Html.ActionLink("Appointments", "Index", "Appointments", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg" })
+    </div>
+    <div class="col-md-4">
+        <h2>Customer Management</h2>
+        <p>Mauris id rhoncus diam. Nunc eget dolor sagittis, vehicula ipsum ut, ultricies massa. Curabitur tempus lobortis massa a rutrum. Praesent tempor mi ut nisl auctor sollicitudin. Fusce purus lorem, varius vel metus nec, fringilla tincidunt augue.</p>
+       
+    </div>
+</div>
